@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet">
+    <title>{% block title %}Pan Tadeusz{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Sir Thaddeus, or the Last Foray in Lithuania: A Nobility's Tale of the Years 1811–1812, in Twelve Books of Verse</h1>
+        <h2>Adam Mickiewicz</h2>
+    </header>
+    <section>
+        {% block content %}{% endblock %}
+    </section>
+    <footer>
+        Julie Folkerts, UEK
+    </footer>
+</body>
+</html>

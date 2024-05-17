@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Main Page{% endblock %}
+{% block content %}
+<h3>Table of contents</h3>
+
+<ul>
+    <li><a href="{{ url_for('index') }}">Main page</a></li>
+    {% for i in range(1, 13) %}
+        <li><a href="{{ url_for('book', book_number=i) }}">Book {{ i }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}
